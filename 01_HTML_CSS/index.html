@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Internetprotokollfamilie</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Hauptseite</a>
+                </li>
+                <li>
+                    <a href="/">Themenportale</a>
+                </li>
+                <li>
+                    <a href="/">Von A bis Z</a>
+                </li>
+                <li>
+                    <a href="/">Zufälliger Artikel</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Internetprotokollfamilie</h1>
+            <p>Die <strong>Internetprotokollfamilie</strong> ist eine Familie von rund 500 Netzwerkprotokollen, die die Basis für die Netzkommunikation im Internet bilden. Häufig wird auch die Bezeichnung TCP/IP-Protokollfamilie verwendet.</p>
+            <div class="content">
+                <h2>Inhaltsverzeichnis</h2>
+                <ol>
+                    <li>TCP/IP-Referenzmodell</li>
+                    <li>Beispiel</li>
+                    <li>
+                        Protokollstapel
+                        <ol>
+                            <li>Anwendungsschicht (entspricht OSI-Schicht 5–7)</li>
+                            <li>Transportschicht (entspricht OSI-Schicht 4)</li>
+                            <li>Internetschicht (entspricht OSI-Schicht 3)</li>
+                            <li>Netzzugangsschicht (entspricht OSI-Schicht 1–2)</li>
+                        </ol>
+                    </li>
+                    <li>Siehe auch</li>
+                    <li>Literatur</li>
+                    <li>Weblinks</li>
+                    <li>Einzelnachweise</li>
+                </ol>
+            </div>
+            <h1>TCP/IP-Referenzmodell</h1>
+            <p>
+                Ende der 1960er Jahre begann die Entwicklung mit einer Studie der DARPA (Defense Advanced Research Projects Agency), die dem Verteidigungsministerium der Vereinigten Staaten (DoD) untersteht, zur Entwicklung von Protokollen zur Datenkommunikation. Dabei entstand das DoD-Schichtenmodell, in dem die Aufgaben in vier Schichten unterteilt wurden. Dieses Modell ist Grundlage der Internetprotokollfamilie.[1] Kommunikation wird in Rechnernetzen durch Netzwerkprotokolle umgesetzt und in der Praxis in funktionale Schichten (layer) unterteilt. Für das Internet und die Internetprotokollfamilie ist dabei die Gliederung nach dem sogenannten TCP/IP-Referenzmodell, welches 4 aufeinander aufbauende Schichten beschreibt, maßgebend. Dieses ist auf die Internet-Protokolle zugeschnitten, die den Datenaustausch über die Grenzen lokaler Netze hinaus ermöglichen (dies sind vor allem TCP und IP). Hier werden weder der Zugriff auf ein Übertragungsmedium noch die Datenübertragungstechnik definiert. Vielmehr sind die Internet-Protokolle dafür zuständig, Datenpakete über mehrere Punkt-zu-Punkt-Verbindungen (Hops) weiterzuvermitteln und auf dieser Basis Verbindungen zwischen Netzteilnehmern über mehrere Hops herzustellen. Um Probleme der Netzkommunikation im Allgemeinen zu betrachten, greift man auf das detailliertere ISO/OSI-Referenzmodell zurück. Es ist jedoch zu beachten, dass sich die Benennung der einzelnen Schichten in den Modellen unterscheidet, und nachfolgende Zuordnungen zwischen OSI-Schichten und TCP-IP-Ebenen nicht immer vollständig übereinstimmen.
+            </p>
+            <table>
+                <tr>
+                    <th>OSI-Schicht</th>
+                    <th>TCP/IP-Schicht</th>
+                    <th>Beispiel</th>
+                </tr>
+                <tr>
+                    <td>Anwendungen (7)</td>
+                    <td rowspan="3">Anwendungen</td>
+                    <td rowspan="3">HTTP, UDS, FTP, SMTP, POP, Telnet, OPC UA, SOCKS</td>
+                </tr>
+                <tr>
+                    <td>Darstellung (6)</td>
+                </tr>
+                <tr>
+                    <td>Sitzung (5)</td>
+                </tr>
+                <tr>
+                    <td>Transport (4)</td>
+                    <td>Transport</td>
+                    <td>TCP, UDP, SCTP</td>
+                </tr>
+                <tr>
+                    <td>Vermittlung (3)</td>
+                    <td>Internet</td>
+                    <td>IP (IPv4, IPv6), ICMP (über IP)</td>
+                </tr>
+                <tr>
+                    <td>Sicherung (2)</td>
+                    <td rowspan="2">Netzzugang</td>
+                    <td rowspan="2">Ethernet, Token Bus, Token Ring, FDDI, IPoAC</td>
+                </tr>
+                <tr>
+                    <td>Bitübertragung (1)</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>
+                Der Text ist unter der Lizenz „Creative Commons Attribution/Share Alike“ verfügbar; Informationen zu den Urhebern und zum Lizenzstatus eingebundener Mediendateien (etwa Bilder oder Videos) können im Regelfall durch Anklicken dieser abgerufen werden. Möglicherweise unterliegen die Inhalte jeweils zusätzlichen Bedingungen. Durch die Nutzung dieser Website erklären Sie sich mit den Nutzungsbedingungen und der Datenschutzrichtlinie einverstanden. Wikipedia® ist eine eingetragene Marke der Wikimedia Foundation Inc.
+            </p>
+        </footer>
+    </body>
+</html>
