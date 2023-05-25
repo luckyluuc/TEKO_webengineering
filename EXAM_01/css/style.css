@@ -1,0 +1,35 @@
+.responsive-image {
+	max-width: 100vw;
+	height: auto;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav {
+	border-bottom: 3px black solid;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td,
+tr {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+footer {
+	font-style: italic;
+	text-align: center;
+}
