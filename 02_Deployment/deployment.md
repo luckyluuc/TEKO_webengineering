@@ -31,6 +31,45 @@ https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/c
 Anschliessend, wenn der push erfolgreich war, wird hier "Hello World" angezeigt: <br>
 https://luckyluuc.github.io
 
-## Docker
+## Docker / Docker compose
+1. Docker herunterladen und installieren [Docker Desktop](https://www.docker.com/)
+2. Neuen Folder anlegen (bspw. docker_example)
+3. Anzuzeigender Inhalt erstellen (bspw. docker_example/index.html)
+4. Ein neues Dockerfile erstellen im Rootpfad (bspw. docker_example/Dockerfile) <br>
+Folgenden Inhalt ins Dockerfile schreiben: <br>
+```Dockerfile
+FROM nginx:latest
 
+COPY . /usr/share/nginx/html
 
+RUN chmod g+rx -R /usr/share/nginx/html
+```
+5. via Terminal in docker_example folder wechseln um Container-Image zu builden starten
+``` shell
+docker build . --tag webeengineering
+docker run --name webenengineering --detach --publish 80:80 webengineering
+```
+6. auf localhost (so im Browser eingeben) wird der Inhalt nun angezeigt
+
+### Docker compose
+1. Container stoppen und löschen
+``` shell
+docker stop webengineering
+docker rm webengineering
+```
+2. Im Rootpfad ein docker-compose.yml-File erstellen und mit nachstehendem Inhalt befüllen: <br>
+```` yaml
+version: "1"
+services:
+  web:
+    build: .
+    container_name: webengineering
+    restart: always
+    ports:
+      - "80:80"
+````
+3. Image neu builden und starten (wenn schon gebuilded kann --build weggelassen werden)
+```` shell
+docker-compose up --build
+````
+4. Container stoppen mit CTRL+C
