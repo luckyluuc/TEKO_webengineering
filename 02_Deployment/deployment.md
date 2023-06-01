@@ -25,10 +25,10 @@ Für push wird Username und PW verlangt, PW funktioniert aber nicht, man muss ei
 > remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication. <br>
 > fatal: Authentication failed for 'https://github.com/luckyluuc/luckyluuc.github.io/'
 
-Infos dafür: <br>
+Infos dazu: <br>
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-fine-grained-personal-access-token
 
-Anschliessend wenn der push erfolgreich war, wird hier "Hello World" angezeigt: <br>
+Anschliessend, wenn der push erfolgreich war, wird hier "Hello World" angezeigt: <br>
 https://luckyluuc.github.io
 
 ## Docker
