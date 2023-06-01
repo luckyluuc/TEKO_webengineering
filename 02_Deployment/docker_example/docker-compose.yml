@@ -1,0 +1,8 @@
+version: "1"
+services:
+  web:
+    build: .
+    container_name: webengineering
+    restart: always
+    ports:
+      - "80:80"
