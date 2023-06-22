@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="//d3js.org/d3.v4.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>JS Weather</title>
@@ -11,16 +12,24 @@
 </style>
 <body>
     <script type="module" src="index.js"></script>
-      <form id="addressForm">
-        <h1>Weather</h1>
-          <label>
-              <input type="text" id="addressInput" placeholder="Strasse, PLZ Ort">
-          </label>
-          <button type="submit">Senden</button>
-      </form>
+        <form id="addressForm">
+            <h1>WetterApp</h1>
+                <label>
+                    <input type="text" id="addressInput" placeholder="Ort">
+                </label>
+            <button type="submit">Senden</button>
+        </form>
 
-      <h2>Das Wetter in <span id="address"></span> ist</h2>
-      <div id="weather"></div>
+        <!--
+        <script>
+            d3.select("body").append("p").text("Hello World");
+        </script>
+        -->
 
+        <div id="weatherText"></div>
+        <div id="weather"></div>
+        <div id="sun"></div>
+        <div id="cloud"></div>
+        <div id="rain"></div>
 </body>
 </html>
